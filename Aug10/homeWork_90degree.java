@@ -1,6 +1,15 @@
 package Aug10;
 
-public class gitTest {
+public class homeWork_90degree {
+    /*
+        123       741
+        456  -->  852
+        789       963
+
+        Idea: i = 0, j = 0,1,2 ---> j = 2, i = 0,1,2
+              i = 1, j = 0,1,2 ---> j = 1, i = 0,1,2
+              i = 2, j = 0,1,2 ---> j = 0, i = 0,1,2
+     */
     public static void main(String[] args) {
         int[][] data = {{1,2,3},{4,5,6},{7,8,9}};
         int[][] changed_data = new int[3][3];
@@ -18,5 +27,5 @@ public class gitTest {
             System.out.println();
         }
     }
-}
 
+}
