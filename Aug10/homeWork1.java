@@ -1,6 +1,6 @@
 package Aug10;
 
-public class homeWork_1 {
+public class homeWork1 {
     /*
         Given an array, return a reversed array making a new array.
         1,2,3       9,8,7

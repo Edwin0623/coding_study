@@ -7,33 +7,42 @@ package June29;
 
 public class functions {
     public static void main(String[] args) {
-        int[] a = {1,3,5,7,9};
+        int x = 5;
+        System.out.println(function(x));
 
+        System.out.println(function2(x));
+
+        // 1,3,5,7,9 -> 1,3,5,7,9
+        int[] a = {1,3,5,7,9};
         printingArray(a);
 
+        // 1,3,5,7,9 -> 2,4,6,8,10
         for (int i = 0; i < a.length; i++) {
             a[i] = a[i] + 1;
         }
-
         printingArray(a);
 
-        int[] c = {1,3,5,7,9};
-
-        for (int i = 0; i < c.length; i++) {
-            c[i] = getBiggerNumber(c[i]);
+        // 2,4,6,8,10 -> 3,5,7,9,11
+        for (int i = 0; i < a.length; i++) {
+            a[i] = getBiggerNumber(a[i]);
         }
-
-        printingArray(c);
+        printingArray(a);
     }
-
+    public static int function(int x) {
+        x = x + 10;
+        return x;
+    }
+    public static int function2(int y) {
+        y = 2 * y;
+        return y;
+    }
     public static void printingArray(int[] arr) {
         System.out.println("Printing Array!");
         for(int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
         }
-        System.out.println("Done!" + "\n");
+        System.out.println();
     }
-
     public static int getBiggerNumber(int a) {
         return a + 1;
     }

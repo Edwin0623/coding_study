@@ -1,4 +1,4 @@
-package June15Homework_while;
+package Jun15Homework;
 
 public class homeWork9 {
     public static void main(String[] args) {

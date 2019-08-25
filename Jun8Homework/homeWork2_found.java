@@ -1,4 +1,4 @@
-package June8Homework_for;
+package Jun8Homework;
 
 import java.util.Scanner;
 

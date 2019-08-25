@@ -1,4 +1,4 @@
-package June1;
+package Jun1;
 
 public class multiplicationTable {
     public static void main(String[] args) {

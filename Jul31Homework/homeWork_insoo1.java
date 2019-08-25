@@ -2,7 +2,7 @@ package Jul31Homework;
 
 import java.util.Scanner;
 
-public class homeWork_insoo {
+public class homeWork_insoo1 {
     /*
         Given a sentence, return the sentence in reverse order.
 

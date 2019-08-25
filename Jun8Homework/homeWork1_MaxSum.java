@@ -1,4 +1,4 @@
-package June8Homework_for;
+package Jun8Homework;
 
 public class homeWork1_MaxSum {
     /*

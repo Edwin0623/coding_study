@@ -2,7 +2,7 @@ package Jul31Homework;
 
 import java.util.Scanner;
 
-public class homeWork_muhyun {
+public class homeWork_muhyun_ver1 {
     /*
         사이즈가 5인 스트링을 받고, 전부 숫자면 'true'가 나오고 다른 알파벳 하나라도 있으면 'false'가 나오게 하기
 
@@ -30,7 +30,7 @@ public class homeWork_muhyun {
         } else {
             for (int i = 0; i < input.length(); i++) {
                 // !을 하지않으면, 한 자리라도 숫자면 'true'가 나온다.
-                if (!(input.charAt(i) >= (int)'0' && input.charAt(i) <= (int)'9')) {
+                if (!(input.charAt(i) >= '0' && input.charAt(i) <= '9')) {
                     found = false;
                 }
             }

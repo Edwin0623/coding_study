@@ -1,8 +1,8 @@
-package June8;
+package Jun8;
 
 import java.util.Scanner;
 
-public class For_Loop_Test1 {
+public class for_Loop_Test1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("This is for 'For-loop' function test.");

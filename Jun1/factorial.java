@@ -1,4 +1,4 @@
-package June1;
+package Jun1;
 
 import java.util.Scanner;
 
@@ -9,15 +9,15 @@ public class factorial {
 
         System.out.print("Enter an positive Integer(n): ");
         int n = A.nextInt();
-        int sum = 1;
+        int result = 1;
 
         if (n < 1) {
-            System.out.println("This is not an positive integer");
+            System.out.println("This is not an positive Integer");
         } else {
             for (int i = 1; i <= n; i++) {
-                sum = sum * i;
+                result = result * i;
             }
-            System.out.println("Sum: " + sum);
+            System.out.println(n + "! = " + result);
         }
     }
 }

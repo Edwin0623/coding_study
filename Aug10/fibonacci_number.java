@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class fibonacci_number {
     /*
-        Fibonacci: 0 1 1 2 3 5 8 13 ...
+        Fibonacci number: 0 1 1 2 3 5 8 13 21 34 ...
         input: n = 8
         output: 13
      */
@@ -16,9 +16,10 @@ public class fibonacci_number {
     }
     public static int fibonacci(int n) {
         if (n <= 0) {
-            return -1;
+            System.out.println("Error: " + n + " is not an positive Integer.");
+            return - 1;
         }
-        if (n <= 2) {
+        if (n <= 2 && n > 0) {
             return n - 1;
         }
         int previous = 0;

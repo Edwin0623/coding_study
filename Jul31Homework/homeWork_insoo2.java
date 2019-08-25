@@ -2,7 +2,7 @@ package Jul31Homework;
 
 import java.util.Scanner;
 
-public class homeWork_insoo_Roll_the_Dice {
+public class homeWork_insoo2 {
     /*
        Roll the Dice: Write a program to determine how many ways can people roll the dice to get the sum 10.
        (1 <= m,n <= 1000)

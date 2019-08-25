@@ -2,7 +2,7 @@ package Jul31Homework;
 
 import java.util.Scanner;
 
-public class homeWork_muhyun_different_ver {
+public class homeWork_muhyun_ver2 {
     /*
         사이즈가 5인 스트링을 받고, 전부 숫자면 'true'가 나오고 다른 알파벳 하나라도 있으면 'false'가 나오게 하기.
 

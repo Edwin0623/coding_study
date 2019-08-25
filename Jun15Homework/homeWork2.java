@@ -1,4 +1,4 @@
-package June15Homework_while;
+package Jun15Homework;
 
 import java.util.Scanner;
 

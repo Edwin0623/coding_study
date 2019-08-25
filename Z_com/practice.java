@@ -1,4 +1,4 @@
-package com;
+package Z_com;
 
 public class practice {
     /*

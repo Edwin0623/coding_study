@@ -1,4 +1,4 @@
-package Mailprogramming;
+package Z_Mailprogramming;
 
 public class ex1 {
     /*

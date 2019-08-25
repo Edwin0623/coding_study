@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html>
 
+<body>
+<canvas id="myCanvas" width="600" height="380" style="border:1px solid #000000;"></canvas>
+<script>
+        document.addEventListener("keydown", keyPressed);
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        var specialBoxX = 0;
+        var specialBoxY = 0;
+
+        setInterval(function Run() {
+            clearCanvas();
+            for (var i = 0; i < 10; i++) {
+                for (var j = 0; j < 10; j++) {
+                    if (i == specialBoxX && j == specialBoxY) {
+                        ctx.fillStyle = "orange";
+                        ctx.fillRect(50 + 20 * i, 100 + 20 * j, 20, 20);
+                    }
+                    ctx.strokeRect(50 + 20 * i, 100 + 20 * j, 20, 20);
+                }
+            }
+            console.log(specialBoxX + ", " + specialBoxY);
+        }, 100);
+
+        function clearCanvas() {
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, c.width, c.height);
+        }
+
+        function keyPressed(event) {
+            console.log(event);
+            if (event.key == "ArrowUp") {
+                specialBoxY--;
+            } else if (event.key == "ArrowDown") {
+                specialBoxY++;
+            } else if (event.key == "ArrowLeft") {
+                specialBoxX--;
+            } else if (event.key == "ArrowRight") {
+                specialBoxX++;
+            }
+
+            if (specialBoxX < 0) {
+                specialBoxX = 0;
+            }
+            if (specialBoxX > 9) {
+                specialBoxX = 9;
+            }
+            if (specialBoxY < 0) {
+                specialBoxY = 0;
+            }
+            if (specialBoxY > 9) {
+                specialBoxY = 9;
+            }
+        }
+    </script>
 </body>
+
 </html>

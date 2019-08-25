@@ -2,7 +2,7 @@ package Jun8;
 
 import java.util.Scanner;
 
-public class For_Loop_Test2 {
+public class for_Loop_Test2 {
     /*
         양의정수 n이 주어지면 다음과 같이 출력하기
 

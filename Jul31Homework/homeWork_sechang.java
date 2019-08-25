@@ -2,11 +2,10 @@ package Jul31Homework;
 
 import java.util.Scanner;
 
-public class homeWork_sechang2 {
+public class homeWork_sechang {
     /*
         Given an odd-length of numbers, return below.
-        input: 1,2,3,4,5,6,7 (,도 쳐야함)
-        make:  3,2,1,4,7,6,5 then,
+        input: 1,2,3,4,5,6,7 (,도 쳐야함) -> make 3,2,1,4,7,6,5 then
         output: 4
                 1,7
                 2,6
