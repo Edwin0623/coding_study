@@ -1,4 +1,4 @@
-package Jul30Homework;
+package Jul31Homework;
 
 import java.util.Scanner;
 
@@ -11,6 +11,8 @@ public class homeWork_muhyun {
 
         input: a1234
         output: false
+
+         <IDEA>: 한자리라도 숫자가 아니면 'false'이기 떄문에 '0' && '9' 아스키코드를 이용하여 편리하게 비교했다.
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,14 +22,15 @@ public class homeWork_muhyun {
     }
 
     public static boolean find(String input) {
-        // 전부 숫자만 있는 스트링을 기준으로 한다.
+        // boolean = false 로 하면 한자리라도 숫자가 있으면 'true'가 나온다.
         boolean found = true;
+
         if (input.length() != 5) {
             System.out.println("Error: you made a wrong string.");
         } else {
             for (int i = 0; i < input.length(); i++) {
                 // !을 하지않으면, 한 자리라도 숫자면 'true'가 나온다.
-                if (!(input.charAt(i) >= '0' && input.charAt(i) <= '9')) {
+                if (!(input.charAt(i) >= (int)'0' && input.charAt(i) <= (int)'9')) {
                     found = false;
                 }
             }
@@ -35,8 +38,3 @@ public class homeWork_muhyun {
         return found;
     }
 }
-
-/*
-    Note: 처음에 boolean = false 로 하고, 'charAt()'써서 각 자리에 있는 것이 숫자이면 'true'로 나오게 했는데
-          이러면 한자리라도 숫자가 있으면 'true'가 나왔다. 그래서 boolean = true (전부 숫자만 입력하는 것을 default) 로 해서 시작했다.
- */

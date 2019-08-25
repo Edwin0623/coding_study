@@ -1,4 +1,4 @@
-package Jul30Homework;
+package Jul31Homework;
 
 import java.util.Scanner;
 

@@ -1,8 +1,21 @@
-package June8;
+package Jun8;
 
 import java.util.Scanner;
 
 public class For_Loop_Test2 {
+    /*
+        양의정수 n이 주어지면 다음과 같이 출력하기
+
+        input: n = 3
+        output: 135
+                13
+                1
+
+                13
+                1
+
+                1
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("This is for Test.");
@@ -10,7 +23,7 @@ public class For_Loop_Test2 {
         int n = sc.nextInt();
 
         if (n < 1) {
-            System.out.println("Error: " + "'" + n + "'" + " is not an positive Integer.");
+            System.out.println("Error: " + n + " is not an positive Integer.");
         } else {
             System.out.println("n = " + n);
             System.out.println();

@@ -1,6 +1,11 @@
 package June8Homework_for;
 
-public class homeWork1 {
+public class homeWork1_MaxSum {
+    /*
+        배열이 주어지면, 배열안의 원소가 연속해서 더해졌을때 가장 큰 값을 구하기
+        input: {-1,3,-1,5}
+        output: 7 (3 - 1 + 5 = 7 (Max Sum))
+     */
     public static void main(String[] args) {
         int[] a = {-1,3,-1,5};
         int tempSum = a[0];

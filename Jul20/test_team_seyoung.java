@@ -1,17 +1,16 @@
-package Jul20Test;
+package Jul20Homework;
 
 import java.util.Scanner;
 
-public class test01 {
+public class test_team_seyoung {
     /*
-        <Test_Team Seyoung>
+        <Team Seyoung: Seyoung, Yeonsoo>
+
         문장을 입력받고, 문장안의 단어개수가 짝수이면 앞 뒤끼리 바꾸고 홀수이면 가운데 단어를 기준으로 왼쪽과 오른쪽의 단어를 바꾸어라
 
-        input: We are so good and happy (단어 개수가 6개로 짝수)
-        output: are we good so happy and
-
-        input: I am a good boy (단어 개수가 5개로 홀수)
-        output: good boy a I am
+        (문장안에 단어갯수가 짝수)                  (문장안에 단어갯수가 홀수)
+        input: We are so good and happy  \\   input: I am a good boy
+        output: are we good so happy and \\   output: good boy a I am
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

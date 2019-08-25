@@ -1,8 +1,16 @@
-package Jul20Test;
+package Jul20Homework;
 
 import java.util.Scanner;
 
-public class test02 {
+public class test_team_sechang {
+    /*
+        <Team Sechang: Sechang, Muhyun>
+
+        문장을 받고, 단어의 길이가 홀수이면 거꾸로 출력하고 짝수면 그대로 출력하기
+
+        input: I am a boy
+        output: I am a yob
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Type a sentence");
