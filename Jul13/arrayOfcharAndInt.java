@@ -21,8 +21,6 @@ public class arrayOfcharAndInt {
         // 2) Size of String - length()
         String abc = "abc";
         System.out.println(abc.length());
-
-
     }
 }
 

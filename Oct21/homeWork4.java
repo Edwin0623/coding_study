@@ -1,4 +1,4 @@
-package Oct21Homework;
+package Oct21;
 
 public class homeWork4 {
     /*
@@ -7,10 +7,18 @@ public class homeWork4 {
          output: { 1, 2, 0, 3 }
      */
     public static void main(String[] args) {
-        // 요소가 같을 경우 오류 생
+        // 요소가 같을 경우 오류 생기는데 이거 해결해야 함
         int[] data = { 1, 1, 0, 0 };
+
+        // data 카피한다
+        int[] copied_data = new int[data.length];
+        for (int i = 0; i < data.length; i++) {
+            copied_data[i] = data[i];
+        }
+
+        selectionSort(data);
         printArr(data);
-        printArr(selectionSort(data));
+        printArr(aaa(data, copied_data));
     }
 
     public static void printArr(int[] arr) {
@@ -20,14 +28,8 @@ public class homeWork4 {
         System.out.println();
     }
 
-    public static int[] selectionSort(int[] arr) {
-        // data 카피한다
-        int[] copied_data = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            copied_data[i] = arr[i];
-        }
-
-        // selectionSort로 오름차순 정렬한다
+    public static void selectionSort(int[] arr) {
+        // 오름차순으로 정렬한다
         for (int i = 0; i < arr.length; i++) {
             int min_index = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -39,9 +41,12 @@ public class homeWork4 {
             arr[i] = arr[min_index];
             arr[min_index] = temp;
         }
+    }
 
+    public static int[] aaa(int[] arr, int[] copied_data) {
         // 정렬한 배열의 요소와 원래 배열의 요소의 index 위치를 비교하여 새로운 배열에 넣어준다.
         int[] new_data = new int[arr.length];
+
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
                 if (arr[i] == copied_data[j]) {

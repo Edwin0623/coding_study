@@ -1,4 +1,4 @@
-package May25Homework;
+package May25;
 
 import java.util.Scanner;
 // Finding Max and Min Integer.

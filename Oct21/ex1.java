@@ -1,4 +1,4 @@
-package Oct21Homework;
+package Oct21;
 
 public class ex1 {
     public static void main(String[] args) {

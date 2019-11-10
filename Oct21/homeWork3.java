@@ -1,4 +1,4 @@
-package Oct21Homework;
+package Oct21;
 
 public class homeWork3 {
     /*

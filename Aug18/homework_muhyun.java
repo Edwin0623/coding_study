@@ -1,4 +1,4 @@
-package Aug18Homework;
+package Aug18;
 
 public class homework_muhyun {
     /*

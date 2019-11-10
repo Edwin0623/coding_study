@@ -1,4 +1,4 @@
-package Sep8;
+package Sep8_Virus;
 
 import java.util.Scanner;
 
